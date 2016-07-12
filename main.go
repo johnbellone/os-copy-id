@@ -6,10 +6,11 @@ import (
 	"os"
 	"path/filepath"
 
+	_ "github.com/gophercloud/gophercloud/openstack"
+	_ "github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/keypairs"
 	"github.com/mitchellh/go-homedir"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/keypairs"
 	"github.com/spf13/cobra"
-	"golang.org/x/crypto/ssh"
+	_ "golang.org/x/crypto/ssh"
 )
 
 var IdentityKey string
@@ -19,21 +20,19 @@ var RootCmd = &cobra.Command{
 	Use:   "os-copy-id",
 	Short: "Install your public key in an OpenStack project.",
 	Run: func(cmd *cobra.Command, args []string) {
-		if args.Length == 0 {
+		if len(args) == 0 {
+			// TODO: Something meaningful.
 			os.Exit(2)
 		}
 
 		// Attempt to first delete existing key pair with same name.
-		keyname, args := args[0], args[1:]
+		// keyname, args := args[0], args[1:]
 
 		// Once that is out of the way we're good to yolo that up.
-
-		//pub, err := ssh.NewPublicKey()
-
-		kp, err := keypairs.Create(client, keypairs.CreateOpts{
-			Name:      keyname,
-			PublicKey: string(ssh.MarshallAuthorizedKey(pub)),
-		})
+		// TODO: Steps for actually yolo the key pair:
+		// 1. Configure the OpenStack client from environment variables.
+		// 2. Delete existing key pair by name from tenancy.
+		// 3. Upload marhsalled public key with name to OpenStack.
 	},
 }
 

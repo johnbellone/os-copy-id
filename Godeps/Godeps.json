@@ -1,0 +1,100 @@
+{
+	"ImportPath": "github.com/johnbellone/os-copy-id",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.10.0-19-gf3cfb45",
+			"Rev": "f3cfb454f4c209e6668c95216c4744b8fddb2356"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/keypairs",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/compute/v2/flavors",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/compute/v2/images",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/compute/v2/servers",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/identity/v2/tenants",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/identity/v2/tokens",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/identity/v3/tokens",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/openstack/utils",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/gophercloud/gophercloud/pagination",
+			"Rev": "892e2e1d8620977478fe9892429dfa90443a5580"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/go-version",
+			"Rev": "2e7f5ea8e27bb3fdf9baa0881d16757ac4637332"
+		},
+		{
+			"ImportPath": "github.com/inconshreveable/mousetrap",
+			"Rev": "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+		},
+		{
+			"ImportPath": "github.com/mitchellh/go-homedir",
+			"Rev": "981ab348d865cf048eb7d17e78ac7192632d8415"
+		},
+		{
+			"ImportPath": "github.com/mitchellh/mapstructure",
+			"Rev": "d2dd0262208475919e1a362f675cfc0e7c10e905"
+		},
+		{
+			"ImportPath": "github.com/spf13/cobra",
+			"Rev": "a272c3cbd5ff80a5bf5c5603df50183f9f3f7324"
+		},
+		{
+			"ImportPath": "github.com/spf13/pflag",
+			"Rev": "367864438f1b1a3c7db4da06a2f55b144e6784e0"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/curve25519",
+			"Rev": "2c99acdd1e9b90d779ca23f632aad86af9909c62"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ed25519",
+			"Rev": "2c99acdd1e9b90d779ca23f632aad86af9909c62"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ed25519/internal/edwards25519",
+			"Rev": "2c99acdd1e9b90d779ca23f632aad86af9909c62"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ssh",
+			"Rev": "2c99acdd1e9b90d779ca23f632aad86af9909c62"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "a408501be4d17ee978c04a618e7a1b22af058c0e"
+		}
+	]
+}
