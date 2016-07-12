@@ -1,0 +1,14 @@
+sudo: false
+language: go
+go:
+  - 1.6
+  - tip
+matrix:
+  fast_finish: true
+  allow_failures:
+    - go: tip
+branches:
+  only:
+    - master
+script:
+  - make test
